@@ -15,11 +15,11 @@ export default {
   components: {BlogCard},
    computed:{
         blogPosts(){
-          // for(let i= 0; i < 6; i++){
-          //    console.log(this.$store.state.IdOfprofile);
+           for(let i= 0; i < 6; i++){
+             console.log(this.$store.state.IdOfprofile);
           
-          // }
-          // console.log(this.$store.state.profileId);
+           }
+           console.log(this.$store.state.profileId);
           console.log(this.IdOfprofile);
           return this.$store.state.blogPosts;
            
@@ -32,6 +32,7 @@ export default {
         //    return 1;
         //  }
         // },
+
    }
 }
 </script>

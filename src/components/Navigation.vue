@@ -9,7 +9,7 @@
        <ul v-show="!mobile">
            <router-link class="link" :to="{name:'Home'}">Home</router-link>
            <router-link v-if="user" class="link" :to="{name: 'Blogs'}">News</router-link>
-           <!-- <router-link class="link" :to="{name: 'ListReadingLater'}">ListReading Later</router-link> -->
+            <router-link class="link" :to="{name: 'ListReadingLater'}">ListReading Later</router-link>
             <router-link v-if="admin" class="link" :to="{name:'CreatePost'}">Create Post</router-link>
            <router-link v-if="!user" class="link" :to="{name: 'Login'}">Log in</router-link>
            <router-link v-if="!user" class="link" :to="{name: 'Register'}"> Sign up</router-link>
